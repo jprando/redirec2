@@ -13,4 +13,4 @@ run: ## iniciar o container redirec2
 	redirec2
 
 build: ## gera imagem redirec2
-	docker build .
+	docker build -t redirec2:last -t redirec2 .
