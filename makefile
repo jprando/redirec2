@@ -22,3 +22,6 @@ _rm: ## Remove o container redirec2
 
 ls: ## lista os arquivos dentro do container redirec2
 	docker exec -ti redirec2-srv ls -la /app
+
+log: ## exibe o log do container redirec2
+	docker logs --tail 50 --follow redirec2-srv
