@@ -9,6 +9,9 @@ http.createServer((req, res) => {
   res.setHeader('Location', redirec2)
   res.end()
 }).listen(port, host, () => {
+  console.log({
+    host, port, redirec2
+  })
   console.log(`\rServidor rodando em http://${host}:${port}/`)
   console.log('\rPara derrubar o servidor, pressione CTRL + C')
 })
