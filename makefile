@@ -15,3 +15,7 @@ run: ## iniciar o container redirec2
 
 build: ## gera imagem redirec2
 	docker build -t redirec2:latest -t redirec2 .
+
+_rm: ## Remove o container redirec2
+	docker stop redirec2-srv
+	docker rm redirec2-srv
