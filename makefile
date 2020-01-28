@@ -11,6 +11,7 @@ run: ## iniciar o container redirec2
 		-e LETSENCRYPT_HOST=upload.jeudi.dev \
 		-e VIRTUAL_HOST=upload.jeudi.dev \
 		-e VIRTUAL_PORT=3000 \
+		-e REDIREC2=https://drive.jeudi.dev/s/sDF2rZGeA75YxnE \
 	redirec2
 
 build: ## gera imagem redirec2
