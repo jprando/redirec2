@@ -7,6 +7,7 @@ help:  ## Exibe essa ajuda
 
 run: ## iniciar o container redirec2
 	docker run --name redirec2-srv -d \
+		--restart=unless-stopped \
 		-e LETSENCRYPT_HOST=upload.jeudi.dev \
 		-e VIRTUAL_HOST=upload.jeudi.dev \
 		-e VIRTUAL_PORT=3000 \
