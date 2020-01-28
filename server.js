@@ -1,6 +1,6 @@
 const http = require('http')
 
-const host = process.env.REDIREC2_HOST || process.env.VIRTUAL_HOST || process.env.LETSENCRYPT_HOST || '0.0.0.0'
+const host = process.env.REDIREC2_HOST || '0.0.0.0'
 const port = process.env.REDIREC2_PORT || process.env.VIRTUAL_PORT || 3000
 const redirec2 = process.env.REDIREC2 || 'https://jeudi.dev'
 
