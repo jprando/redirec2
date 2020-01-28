@@ -1,7 +1,7 @@
 const http = require('http')
 
 const {
-  host = 'localhost',
+  host = '0.0.0.0',
   port = 3000,
   redirect2 = 'https://jeudi.dev'
 } = require('./config.json')
