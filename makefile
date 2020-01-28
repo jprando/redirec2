@@ -19,3 +19,6 @@ build: ## gera imagem redirec2
 _rm: ## Remove o container redirec2
 	docker stop redirec2-srv
 	docker rm redirec2-srv
+
+ls: ## lista os arquivos dentro do container redirec2
+	docker exec -ti redirec2-srv ls -la /app
